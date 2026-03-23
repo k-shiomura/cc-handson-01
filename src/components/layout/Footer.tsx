@@ -21,7 +21,7 @@ export function Footer() {
           ))}
         </div>
         <p className="text-sm text-slate-400 dark:text-slate-500">
-          © {new Date().getFullYear()} Kiyomi Shiomura. All rights reserved.
+          © {new Date().getFullYear()} Hanako Cosmo. All rights reserved.
         </p>
       </div>
     </footer>

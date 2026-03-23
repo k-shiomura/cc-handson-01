@@ -2,16 +2,16 @@ import { projects } from '../../data/portfolio'
 import { SectionTitle } from '../ui/SectionTitle'
 
 const statusConfig = {
-  completed: { label: '完成', className: 'bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400' },
-  wip: { label: '開発中', className: 'bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400' },
+  completed: { label: '公開中', className: 'bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400' },
+  wip: { label: '制作中', className: 'bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400' },
 }
 
 /** Projects セクション */
 export function Projects() {
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <SectionTitle title="Projects" subtitle="制作物" />
+        <SectionTitle title="Works" subtitle="作品" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map(project => {
@@ -87,7 +87,7 @@ export function Projects() {
                         className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                       >
                         <span className="text-xs">↗</span>
-                        Demo
+                        作品を見る
                       </a>
                     )}
                   </div>

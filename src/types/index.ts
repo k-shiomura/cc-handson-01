@@ -1,7 +1,7 @@
 /** スキル */
 export interface Skill {
   name: string
-  category: 'frontend' | 'backend' | 'devops' | 'tools'
+  category: 'camera' | 'lens' | 'genre' | 'software'
   level: number // 1〜5
   icon?: string
 }

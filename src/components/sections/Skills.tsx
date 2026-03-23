@@ -4,21 +4,21 @@ import { SectionTitle } from '../ui/SectionTitle'
 import type { Skill } from '../../types'
 
 const categoryLabel: Record<Skill['category'], string> = {
-  frontend: 'Frontend',
-  backend: 'Backend',
-  devops: 'DevOps',
-  tools: 'Tools',
+  camera: 'Camera',
+  lens: 'Lens',
+  genre: 'Genre',
+  software: 'Software',
 }
 
 const levelLabel: Record<number, string> = {
   1: '入門',
   2: '基礎',
-  3: '実務',
-  4: '上級',
-  5: 'エキスパート',
+  3: '慣れた',
+  4: '得意',
+  5: 'メイン機材',
 }
 
-const categories = ['frontend', 'backend', 'devops', 'tools'] as const
+const categories = ['camera', 'lens', 'genre', 'software'] as const
 
 type Category = (typeof categories)[number] | 'all'
 
@@ -31,9 +31,9 @@ export function Skills() {
     : skills.filter(s => s.category === active)
 
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-50 dark:bg-slate-800/30">
+    <section id="skills" className="py-24 px-6 bg-gray-50 dark:bg-gray-900/50">
       <div className="max-w-5xl mx-auto">
-        <SectionTitle title="Skills" subtitle="保有スキル" />
+        <SectionTitle title="Equipment" subtitle="機材 & スタイル" />
 
         {/* カテゴリフィルター */}
         <div className="flex flex-wrap justify-center gap-2 mb-10">

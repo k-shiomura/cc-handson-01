@@ -50,7 +50,7 @@ export function Contact() {
     }`
 
   return (
-    <section id="contact" className="py-20 px-4 bg-slate-50 dark:bg-slate-800/30">
+    <section id="contact" className="py-24 px-6 bg-gray-50 dark:bg-gray-900/50">
       <div className="max-w-5xl mx-auto">
         <SectionTitle title="Contact" subtitle="お問い合わせ" />
 
@@ -58,12 +58,12 @@ export function Contact() {
           {/* 左: 説明と SNS リンク */}
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-2">
-                お気軽にどうぞ
+              <h3 className="text-sm font-light tracking-widest text-gray-700 dark:text-gray-200 mb-2">
+                撮影のご依頼・お問い合わせ
               </h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                お仕事のご依頼・ご質問・情報交換など、何でもお気軽にメッセージをお送りください。
-                通常 2〜3 営業日以内にご返信いたします。
+                ポートレート撮影・イベント撮影・作品についてのご感想など、お気軽にメッセージをお送りください。
+                通常 2〜3 日以内にご返信いたします。
               </p>
             </div>
 

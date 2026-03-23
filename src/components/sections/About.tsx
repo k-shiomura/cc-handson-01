@@ -4,9 +4,9 @@ import { SectionTitle } from '../ui/SectionTitle'
 /** About セクション */
 export function About() {
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <SectionTitle title="About" subtitle="自己紹介" />
+        <SectionTitle title="Profile" subtitle="プロフィール" />
 
         {/* プロフィール */}
         <div className="flex flex-col md:flex-row gap-12 items-start mb-16">
@@ -35,20 +35,29 @@ export function About() {
           {/* 本文 */}
           <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
             <p>
-              はじめまして。フロントエンド開発を専門とするエンジニアです。
-              React / TypeScript を用いた SPA・Web アプリケーション開発を得意としています。
+              はじめまして、Hanako です。光と瞬間に魅せられたフォトグラファーです。
+              ポートレート・風景・スナップを中心に、日常の中の美しさを写真で記録しています。
             </p>
             <p>
-              ユーザーが直感的に使えるインターフェースの設計・実装を大切にしており、
-              パフォーマンス・アクセシビリティ・保守性を意識したコードを書くことを心がけています。
-              個人開発や OSS 活動を通じて継続的に学び続けています。
+              「余白のある写真」を大切にしており、シンプルで静謐な世界観を追求しています。
+              Fujifilm X-T30 III をメイン機に、Adobe Lightroom でフィルムライクなレタッチを施しています。
+              作品は{' '}
+              <a
+                href="https://kiyomishiomura.wixsite.com/camera"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 decoration-slate-300 dark:decoration-slate-600 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
+              >
+                カメラサイト
+              </a>
+              でも公開しています。
             </p>
 
             <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 mt-6 text-sm">
               {[
                 { label: '拠点', value: '東京都' },
-                { label: '職種', value: 'フロントエンドエンジニア' },
-                { label: '経験年数', value: '5年' },
+                { label: 'ジャンル', value: 'ポートレート・風景・スナップ' },
+                { label: 'メイン機材', value: 'Fujifilm X-T30 III' },
                 { label: 'メール', value: 'hello@example.com' },
               ].map(({ label, value }) => (
                 <div key={label} className="flex gap-3">
@@ -62,8 +71,8 @@ export function About() {
 
         {/* 経歴タイムライン */}
         <div>
-          <h3 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-8">
-            職務経歴
+          <h3 className="text-xs font-light tracking-[0.25em] uppercase text-gray-400 dark:text-gray-500 mb-8">
+            Activity
           </h3>
           <ol className="relative border-l border-slate-200 dark:border-slate-700 space-y-8 ml-3">
             {experiences.map((exp, i) => (
