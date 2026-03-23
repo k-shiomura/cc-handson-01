@@ -45,7 +45,7 @@ export function Hero() {
         alt=""
         aria-hidden
         loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-15"
+        className="absolute inset-0 w-full h-full object-cover opacity-40 dark:opacity-20"
       />
       {/* 右上にごく淡いアクセント */}
       <div
