@@ -28,10 +28,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: rm -f package-lock.json && npm install
 
       - name: Build
-        run: chmod +x node_modules/.bin/* && npm run build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
