@@ -11,5 +11,5 @@ export default defineConfig({
       interval: 500,
     },
   },
-  base: '/',
+  base: '/cc-handson-01/',
 })
