@@ -15,7 +15,7 @@ const variantClass: Record<Variant, string> = {
 export function Button({ variant = 'primary', className = '', children, ...props }: ButtonProps) {
   return (
     <a
-      className={`inline-block px-6 py-3 rounded-lg font-medium transition-colors duration-200 ${variantClass[variant]} ${className}`}
+      className={`inline-block px-6 py-3 rounded-lg font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-none ${variantClass[variant]} ${className}`}
       {...props}
     >
       {children}

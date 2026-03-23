@@ -80,7 +80,7 @@ export const projects: Project[] = [
     title: 'New Series',
     description: '現在制作中の新シリーズ。テーマは「余白」。静寂の中に宿る美しさを探しています。',
     tags: ['制作中', 'コンセプチュアル'],
-    thumbnailUrl: 'https://images.unsplash.com/photo-1617194311278-5e2a78582342?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1587991799026-e775b3b36103?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     status: 'wip',
   },
 ]
