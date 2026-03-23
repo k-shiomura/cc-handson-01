@@ -28,6 +28,7 @@ export function Projects() {
                       <img
                         src={project.thumbnailUrl}
                         alt={project.title}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     )

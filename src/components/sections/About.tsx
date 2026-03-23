@@ -12,9 +12,12 @@ export function About() {
         <div className="flex flex-col md:flex-row gap-12 items-start mb-16">
           {/* アバター */}
           <div className="flex-shrink-0 mx-auto md:mx-0">
-            <div className="w-40 h-40 rounded-2xl bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center text-white text-5xl font-bold shadow-lg">
-              Y
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1666526021236-c3c549ef282f?w=400&q=80&auto=format&fit=crop"
+              alt="Hanako Cosmo"
+              loading="lazy"
+              className="w-40 h-40 rounded-2xl object-cover shadow-lg"
+            />
             {/* SNS リンク */}
             <div className="flex gap-3 mt-4 justify-center md:justify-start">
               {socialLinks.map(link => (
