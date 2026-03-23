@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      # ソースコードをホストと同期（ホットリロード用）
+      - .:/app
+      # node_modules はコンテナ側のボリュームを使用し、ホストと干渉させない
+      - node_modules:/app/node_modules
+    environment:
+      - NODE_ENV=development
+      # WSL2 / Docker 環境でのファイル変更検知にポーリングを有効化
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+
+volumes:
+  node_modules:

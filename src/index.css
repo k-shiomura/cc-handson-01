@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-pink-50 text-slate-800 transition-colors duration-300;
+    @apply dark:bg-slate-900 dark:text-slate-100;
+  }
+}
