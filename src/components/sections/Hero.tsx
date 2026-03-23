@@ -1,5 +1,5 @@
 import { Button } from '../ui/Button'
-import { socialLinks, projects } from '../../data/portfolio'
+import { socialLinks } from '../../data/portfolio'
 
 /** SNS アイコン */
 function SocialIcon({ label }: { label: string }) {
@@ -39,16 +39,14 @@ export function Hero() {
     >
       {/* 背景グラデーション：白→薄いグレーの静謐なグラデーション */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800" />
-      {/* Snapshot 写真を透過背景として表示 */}
-      {projects.find(p => p.id === 'snapshot')?.thumbnailUrl && (
-        <img
-          src={projects.find(p => p.id === 'snapshot')!.thumbnailUrl}
-          alt=""
-          aria-hidden
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-15"
-        />
-      )}
+      {/* 背景写真を透過表示 */}
+      <img
+        src="https://images.unsplash.com/photo-1614083557249-5ddaeaddbe48?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        aria-hidden
+        loading="lazy"
+        className="absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-15"
+      />
       {/* 右上にごく淡いアクセント */}
       <div
         aria-hidden
